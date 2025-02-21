@@ -1,3 +1,23 @@
+<button onClick = "show()">執行</button>
+<div id = "text"></div>
+
+<!–--------- JS TODO: 請修改為更改背景顏色 –--------->
+<script>
+    let msg = ["你今天也好棒喔(灬ºωº灬)", "快要放假了好開心(✿ﾟ▽ﾟ)ノ", "欸欸 要一起來念書嗎(๑•̀ㅂ•́)و✧"];
+    let i = 0;
+    
+    function show()
+    {
+    	document.getElementById("text").innerHTML = msg[i%3];
+    	++i;
+    }
+</script>
+
+<!–--------- CSS TODO: 請套用一種想要的按鈕(button)樣式 –--------->
+<style>
+
+</style><br>
+
 <img src="https://comic-illustcon.com/wp-content/uploads/2023/06/%E9%AB%98%E4%B8%AD%E6%BC%AB%E7%95%AB%E7%B5%84-%E6%9C%80%E5%84%AA%E7%A7%80%E7%8D%8ECOPIC%E7%8D%8E-%E6%9B%89%E6%98%8E%E5%A5%B3%E4%B8%AD-%E8%83%BD%E7%9C%8B%E5%88%B0%E6%9C%AA%E4%BE%86%E7%9A%84%E7%9F%B3%E9%A0%AD-1.jpeg">
 <br>
 <button>上一章</button>
@@ -6,6 +26,11 @@
 <button>下一頁</button>
 <button>下一章</button>
 <button>切換線路</button>
+<br>
 <a href = "https://m.webtoons.com/zh-hant">
 更多漫畫
 </a>
+<br>
+輸入帳號：<input type = "text"><br>
+輸入密碼：<input type = "password"><br><br>
+
