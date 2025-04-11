@@ -21,6 +21,8 @@ function keyDownHandler(e)
 	else if(e.key == "ArrowLeft")    x -= dx;
     else if(e.key == "ArrowUp")      y -= dy;
 	else if(e.key == "ArrowDown")    y += dy;
+	
+	drawBall();
 }
 
 // TODO: 滑鼠移動(mousemove)時觸發，改變位置(x, y)為滑鼠目前位置(e.clientX, e.clientY)
@@ -31,6 +33,7 @@ function mousemoveHandler(e)
 	{
 		x = e.clientX-canvas.offsetLeft;
 		y = e.clientY-canvas.offsetTop;
+		drawBall();
 	}
 }
 
